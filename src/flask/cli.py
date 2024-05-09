@@ -223,7 +223,7 @@ def prepare_import(path: str) -> str:
     if sys.path[0] != path:
         sys.path.insert(0, path)
 
-    return ".".join(module_name[::-1])
+    return None
 
 
 @t.overload
